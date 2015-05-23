@@ -1,21 +1,14 @@
 <header class="navbar">
   <div class="container">
-    <!-- 「Gatebook」をtopページへのリンクに書き換えてください -->
-    <div id="logo">Gatebook</div>
-
+    <div id="logo"><%= link_to "Gatebook", root_path %></div>
     <nav>
       <ul class="header-right">
-        <!-- 「Top」をtopページへのリンクに書き換えてください -->
-        <li>Top</li>
-
-        <!-- 「About」をaboutページへのリンクに書き換えてください -->
-        <li>About</li>
-        
+        <li><%= link_to "Top", root_path %></li>
+        <li><%= link_to "About", about_path %></li>
       </ul>
     </nav>
   </div>
 </header>
-
 <div class="container">
   <h1><%= @message %></h1>
 </div>
