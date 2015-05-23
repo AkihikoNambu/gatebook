@@ -2,7 +2,8 @@ class NotesController < ApplicationController
   def new
   end
 
-  # createアクションを追加してください
-
-  
+  def create
+    @title = params[:title]
+    @content = params[:content]
+  end
 end
