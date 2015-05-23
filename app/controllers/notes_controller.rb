@@ -9,7 +9,8 @@ class NotesController < ApplicationController
     @note.save
   end
 
-  # indexアクションを追加し、その中でnotesテーブルの全データを取得して@notesに代入してください 
-  
+  def index
+    @notes = Note.all
+  end
 
 end
