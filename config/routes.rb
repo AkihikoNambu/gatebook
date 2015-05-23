@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   post '/notes' => 'notes#create'
   get '/notes' => 'notes#index'
   get '/notes/:id' => "notes#show", as: 'show_note'
+  # notesコントローラのshowアクションへのルーティングを設定してください
+
 
   root 'home#top'
   get 'about' => 'home#about'

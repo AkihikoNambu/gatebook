@@ -18,4 +18,8 @@ class NotesController < ApplicationController
     @note = Note.find(params[:id])
   end
 
+  # editアクションを追加し、URLからidを受け取って変数@noteを定義してください
+
+  
+
 end
