@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
+  # localhost:3000(root_path)でにhomeコントローラのtopアクションが実行されるようにしてください
   get 'home/top'
+
   get 'about' => 'home#about'
 
   
