@@ -3,13 +3,9 @@ class NotesController < ApplicationController
   end
 
   def create
-    # Noteクラスのインスタンスを生成し、@noteに代入してください
-
-    # セッターを用いて、params[:title]をセットしてください
-
-    # セッターを用いて、params[:content]をセットしてください
-
-    # saveメソッドを呼び出して、データベースに保存してください
-
+    @note = Note.new
+    @note.title = params[:title]
+    @note.content = params[:content]
+    @note.save
   end
 end
