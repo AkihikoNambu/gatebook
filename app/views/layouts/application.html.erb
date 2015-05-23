@@ -1,25 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <!-- titleを変更してください -->
-  <title>Gatebook</title>
-
+  <title>Gatebook | 記事投稿SNSサービス</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <!-- header部分を書いてください -->
-
-
-  <!-- yield部分をdivタグで囲む、containerクラスをつけてください -->
-
   
+  <header class="navbar">
+    <div class="container">
+      <div id="logo"><%= link_to "Gatebook", root_path %></div>
+      <nav>
+        <ul class="header-right">
+          <li><%= link_to "Top", root_path %></li>
+          <li><%= link_to "About", about_path %></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
     <%= yield %>
+  </div>
 
-  
-  <!-- footer部分を書いてください -->
-
+  <div class="container">
+    <footer class="footer">
+      <small>
+        &copy; 2015 Progate, Inc.
+      </small>
+    </footer>
+  </div>
 
 </body>
 </html>
