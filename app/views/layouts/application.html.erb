@@ -1,14 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <!-- titleを変更してください -->
   <title>Gatebook</title>
+
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <!-- header部分を書いてください -->
 
-<%= yield %>
+
+  <!-- yield部分をdivタグで囲む、containerクラスをつけてください -->
+
+  
+    <%= yield %>
+
+  
+  <!-- footer部分を書いてください -->
+
 
 </body>
 </html>
