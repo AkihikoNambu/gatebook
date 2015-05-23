@@ -8,4 +8,8 @@ class NotesController < ApplicationController
     @note.content = params[:content]
     @note.save
   end
+
+  # indexアクションを追加し、その中でnotesテーブルの全データを取得して@notesに代入してください 
+  
+
 end
