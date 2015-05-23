@@ -22,8 +22,11 @@ class NotesController < ApplicationController
     @note = Note.find(params[:id])
   end
 
-  # updateアクションを追加してください
-
-
-  
+  def update
+    @note = Note.find(params[:id])
+    @note.title = params[:title]
+    @note.content = params[:content]
+    @note.save
+    redirect_to show_note_path(@note.id)
+  end
 end

@@ -1,6 +1,5 @@
 <h1>投稿を編集する</h1>
-<!-- form_tagに送信先のURLと、送信のmethodを指定してください -->
-<%= form_tag do %>
+<%= form_tag update_note_path(@note.id), method: 'patch' do %>
   タイトル
   <%= text_field_tag :title, @note.title, class: 'form-control title-field' %>
   内容

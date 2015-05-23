@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   get '/notes' => 'notes#index'
   get '/notes/:id' => "notes#show", as: 'show_note'
   get  '/notes/:id/edit' =>"notes#edit", as: 'edit_note'
-  # notesコントローラのupdateアクションへのルーティングを設定してください
+  patch  '/notes/:id' =>"notes#update", as: 'update_note'
   
 
   root 'home#top'
