@@ -7,6 +7,9 @@ class NotesController < ApplicationController
     @note.title = params[:title]
     @note.content = params[:content]
     @note.save
+    # showアクションにリダイレクトしてください
+    
+
   end
 
   def index
