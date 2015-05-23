@@ -1,3 +1,12 @@
-<% @notes.each do |note| %>
-  <%= note.title %>
-<% end %>
+<h1>投稿の一覧</h1>
+<ul class="notes">
+  <% @notes.each do |note| %>
+    <li>
+      <p>タイトル</p>
+      <span class="content">
+        <!-- 以下のタイトルを、詳細ページ（notesコントローラのshowアクション）へのリンクに書き換えてください -->
+        <%= note.title %>
+      </span>
+    </li>
+  <% end %>
+</ul>
