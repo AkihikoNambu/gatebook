@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   get 'home/top'
-  # homeコントローラのaboutアクションへのルーティングを設定してください
+  get 'about' => 'home#about'
 
   
 
