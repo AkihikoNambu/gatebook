@@ -29,4 +29,9 @@ class NotesController < ApplicationController
     @note.save
     redirect_to show_note_path(@note.id)
   end
+
+  # destroyアクションを用意してください
+  
+
+
 end
