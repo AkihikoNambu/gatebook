@@ -25,5 +25,6 @@ class NotesController < ApplicationController
   # updateアクションを追加してください
 
 
-  
+
+
 end
