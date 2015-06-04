@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
   def top
-    @message = "Gatebookへようこそ！"
+    @message = ようこそGatebookへ！"
   end
   
   def about
